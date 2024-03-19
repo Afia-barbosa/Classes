@@ -10,9 +10,12 @@ public class Main {
         Scanner leitor = new Scanner(System.in);
 
         System.out.println("Digite o peso da Pessoa: ");
-        objetoPessoa.peso = leitor.nextFloat();
+        objetoPessoa.setPeso(leitor.nextFloat());
         System.out.println("Digite a altura da Pessoa: ");
-        objetoPessoa.altura = leitor.nextFloat();
+        objetoPessoa.setaltura(leitor.nextFloat());
+
+        objetoPessoa.getpeso();
+        objetoPessoa.getAltura();
 
         System.out.println("IMC = " + objetoPessoa.calcularIMC());
     }
